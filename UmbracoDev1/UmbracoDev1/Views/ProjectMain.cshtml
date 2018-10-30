@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ProjectMain>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div id="main-container">
+    <div id="main" class="wrapper clearfix">
+        <section>
+            <h2>@Umbraco.Field("projectTitle")</h2>
+            @Umbraco.Field("projectDescription")
+           
+@{
+	var selection = Model.Content.Site().FirstChild("projectMain").Children()
+						.Where(x => x.IsVisible())
+						.Where(x => x.GetPropertyValue<String>("status") == "Completed");
+}
+
+<ul>
+	@foreach(var item in selection){
+		<li>
+			<a href="@item.Url">@item.Name</a>
+		</li>
+	}
+</ul>
+
+        </section>
+    </div>
+    </div>

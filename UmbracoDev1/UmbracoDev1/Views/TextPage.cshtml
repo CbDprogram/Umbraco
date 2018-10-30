@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TextPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+
+@if (!Members.GetCurrentLoginStatus().IsLoggedIn) {
+	@Html.Partial("Login");
+	}
+	else
+	{ 
+	@Umbraco.RenderMacro("logout")
+	}

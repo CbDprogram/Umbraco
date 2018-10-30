@@ -1,0 +1,89 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.AboutUs>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+
+
+	<!-- Document Wrapper
+	============================================= -->
+
+<!-- About Us
+				============================================= -->
+				<div class="section nopadding notopmargin nobg clearfix" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE;">
+					<div class="row common-height clearfix">
+						<div class="col-lg-6 center col-padding" style="background: url('/media/1009/man-2.jpg') center center no-repeat; background-size: cover; !important">
+							<div>&nbsp;</div>
+						</div>
+
+						<div class="col-lg-6 col-padding">
+							<div>
+								<div style="position: relative;">
+								
+							
+									</div>
+								</div>
+
+								<!-- About Us Featured Boxes
+								============================================= -->
+								<div class="row clearfix">
+									<div class="col-lg-10 col-md-8 bottommargin">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="fas fa-globe fa-3x"></i></a>
+											</div>
+											<br>
+										<h3 style="color:#999;!important">@Umbraco.Field("AboutTitle")</h3>
+											<h8 style="color:#999;!important" >   @Umbraco.Field("AboutContent")</h8>
+										</div>
+									</div>
+									<div class="col-lg-10 col-md-8 bottommargin">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="fab fa-angellist fa-3x"></i></a>
+											</div>
+											<br>
+											<h3>Vision</h3>
+											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+										</div>
+									</div>
+									<div class="col-lg-10 col-md-8 bottommargin">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="fas fa-users fa-3x"></i></a>
+											</div>
+											<br>
+											<h3>People</h3>
+											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+										</div>
+									</div>
+
+									<div class="col-lg-10 col-md-8">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<a href="#"><i class="far fa-smile-wink fa-3x"></i></a>
+											</div>
+											<br
+											<p style="color:#999;!important">Skills</p>
+											<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+    
+           
+
+        </div>
+   
+
+
+    
+
+
+

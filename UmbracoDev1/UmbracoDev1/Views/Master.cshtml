@@ -1,0 +1,76 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Master>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<!--HomePageCSS-->
+<link rel="stylesheet" href="/css/agency.css">
+<link rel="stylesheet" href="/css/agency.min.css">
+<link rel="stylesheet" href="css/style1.css">
+<!--End-->
+
+<!--AboutPageCSS-->
+<link rel="stylesheet" href="/css/business.css">
+<link rel="stylesheet" href="/css/et-line.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/magnific-popup.css">
+<link rel="stylesheet" href="/css/responsive.css">
+<link rel="stylesheet" href="/css/animate.css">
+<!--End-->
+<!--FONT ICONS-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+<!--end-->
+
+<script src="/scripts/jquery-3.3.1.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+
+<!---AJAX Contact FORM--->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>	 
+	<!----End--->
+	<style>
+	    
+	    
+	</style>
+</head>
+<body>
+	@Umbraco.RenderMacro("mainmenus")
+			
+	@RenderBody()
+	
+
+	
+			
+<div id="footer-container">
+		<footer class="wrapper">
+	@Umbraco.RenderMacro("Footer")
+			<h3>@Umbraco.Field("footer", recursive: true)</h3>
+		</footer>
+	</div>
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ArticlesItem>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+		Layout = "Master.cshtml";
+}
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">@Umbraco.Field("ArticleTitle")
+     
+      </h1>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+          <img class="img-fluid" src="/media/1007/billboard-top-100.jpg" alt="">
+          
+          <p4>The Billboard Hot 100 is the music industry standard record chart in the United States for songs, published weekly by Billboard magazine. Chart rankings are based on sales (physical and digital), radio play, and online streaming in the United States.
+
+The weekly tracking period for sales was initially Monday to Sunday when Nielsen started tracking sales in 1991, but was changed to Friday to Thursday in July 2015. This tracking period also applies to compiling online streaming data. Radio airplay, which, unlike sales figures and streaming, is readily available on a real-time basis, is tracked on a Monday to Sunday cycle (previously Wednesday to Tuesday).[1] A new chart is compiled and officially released to the public by Billboard on Tuesdays.</h4>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">@Umbraco.Field("ArticleTitle")</h3>
+          <p> @Umbraco.Field("articleContent")</p>
+          
+      
+        </div>
+
+      </div>
+   
+</div>
